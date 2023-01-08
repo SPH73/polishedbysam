@@ -23,7 +23,12 @@ module.exports = {
       padding: {},
     },
     extend: {
-      colors: {},
+      colors: {
+        transparent: "transparent",
+        current: "currentColor",
+        "logo-bg": "rgb(var(--color-logo-bg-pink) /1)",
+        "logo-text": "rgb(var(--color-logo-text-grey) /1)",
+      },
     },
   },
   plugins: [],
