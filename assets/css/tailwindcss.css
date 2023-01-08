@@ -3,7 +3,15 @@
 @tailwind utilities;
 
 /* TODO */
-/* add fonts */
+/* fonts */
+@font-face {
+  font-family: "PoiretOne-Regular";
+  src: url("/fonts/PoiretOne-Regular.woff");
+}
+@font-face {
+  font-family: "Questrial-Regular";
+  src: url("/fonts/Questrial-Regular.woff");
+}
 /* add color codes */
 /* add layer styles */
 /* body */
@@ -11,5 +19,3 @@
 /* header/footer */
 /* typography */
 /* components */
-
-
