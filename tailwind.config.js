@@ -16,6 +16,7 @@ module.exports = {
     fontFamily: {
       poiret: ["PoiretOne-Regular", "sans-serif"],
       questrial: ["Questrial-Regular", "sans-serif"],
+      raleway: ["raleway", "sans-serif"],
     },
     screens: {},
     container: {

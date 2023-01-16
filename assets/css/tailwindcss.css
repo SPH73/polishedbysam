@@ -11,6 +11,11 @@
   font-family: "Questrial-Regular";
   src: url("/fonts/Questrial-Regular.woff");
 }
+,
+@font-face {
+  font-family: "Raleway";
+  src: url("/fonts/Raleway-VariableFont_wght.woff");
+}
 
 /* add layer styles */
 /* base */
