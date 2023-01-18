@@ -1,4 +1,7 @@
 {
+  "name": "polishedbysam",
+  "title": "Polished By Sam",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "build": "nuxt build",
