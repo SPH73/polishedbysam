@@ -23,7 +23,7 @@ onMounted(() => {
 
 <template>
   <div class="w-full min-h-full h-screen flex flex-col">
-    <header class="mt-20 mx-10 lg:mx-40 lg:mt-20 lg:mb-40">
+    <header class="mt-20 mx-10 lg:mx-40 mb-20">
       <nav class="">
         <div class="flex items-top justify-between">
           <div>
@@ -32,7 +32,7 @@ onMounted(() => {
             <img
               src="/img/POLISHED-BY-SAM.svg"
               alt="Polished By Sam"
-              class="w-96 lg:w-2/3 mt-5 mb-20"
+              class="w-96 lg:w-2/3 mt-5 lg:mb-10"
             />
           </div>
           <!-- Mobile Menu Button -->

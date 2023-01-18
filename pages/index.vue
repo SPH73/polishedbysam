@@ -6,7 +6,7 @@ definePageMeta({
 
 <template>
   <section class="mx-10 lg:mx-40">
-    <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-12">
+    <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-20">
       <div class="flex flex-col justify-evenly gap-y-8 lg:gap-y-16">
         <div>
           <h1 class="text-primary text-5xl lg:text-7xl">
@@ -53,12 +53,12 @@ definePageMeta({
           </button>
         </div>
       </div>
-      <div class="hidden lg:block relative">
-        <img src="/img/UC_Image.svg" alt="" class="absolute lg:inset-0" />
+      <div class="hidden lg:block relative mb-36">
+        <img src="/img/UC_Image.svg" alt="" class="absolute left-1/3 h-5/6" />
         <img
           src="/img/Pink-cone.svg"
           alt=""
-          class="absolute lg:top-2/3 lg:right-1/4"
+          class="absolute top-2/3 left-2/3 h-1/2"
         />
       </div>
       <div class="lg:hidden relative px-8">
