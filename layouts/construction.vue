@@ -132,10 +132,9 @@ onMounted(() => {
               </div>
               <div class="flex items-center">
                 <NuxtLink
-                  to="https://www.fresha.com/book-now/polished-by-sam-ggw4i4ty/all-offer?id=854408&pId=803345"
+                  to="https://www.fresha.com/a/polished-by-sam-warfield-uk-cgbs5hfo/booking?menu=true"
                   target="_blank"
                   rel="noopener"
-                  @click="isOpen = false"
                   class="my-4 inline-block"
                 >
                   Book</NuxtLink
@@ -143,24 +142,28 @@ onMounted(() => {
               </div>
             </ul>
             <div class="follow mt-12">
-              <p
-                class="font-poiret subpixel-antialiased uppercase text-primary text-5xl"
-              >
-                follow us
-              </p>
               <div class="social flex space-x-5 mt-4">
-                <a href="#">
+                <NuxtLink
+                  to="https://www.facebook.com/profile.php?id=100089587508498"
+                >
                   <font-awesome-icon
                     :icon="['fab', 'facebook']"
                     class="text-primary h-16 w-16"
                   />
-                </a>
-                <a href="#">
+                </NuxtLink>
+                <!-- add when sorted -->
+                <!-- <NuxtLink to="#">
                   <font-awesome-icon
                     :icon="['fab', 'instagram']"
                     class="text-primary h-16 w-16"
                   />
-                </a>
+                </NuxtLink> -->
+                <NuxtLink to="#">
+                  <font-awesome-icon
+                    :icon="['fab', 'whatsapp']"
+                    class="text-primary h-16 w-16"
+                  />
+                </NuxtLink>
               </div>
             </div>
           </aside>

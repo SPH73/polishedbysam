@@ -18,8 +18,24 @@ definePageMeta({
           <p class="tracking-wide text-3xl">
             My mobile nail service is still available; please contact me via
             FaceBook:
-            <span class="font-bold cursor-pointer">@polishedbysam </span> or
-            WhatsApp: <span class="font-bold cursor-pointer">07379 385222</span>
+            <NuxtLink
+              target="_blank"
+              rel="noopener"
+              to="https://www.facebook.com/profile.php?id=100089587508498"
+            >
+              <span class="font-bold cursor-pointer"
+                >@polishedbysam
+              </span></NuxtLink
+            >
+            or WhatsApp:
+            <NuxtLink
+              target="_blank"
+              rel="noopener"
+              to="https://api.whatsapp.com/send?phone=447379385222"
+              ><span class="font-bold cursor-pointer"
+                >07379 385222</span
+              ></NuxtLink
+            >
           </p>
         </div>
         <div>
