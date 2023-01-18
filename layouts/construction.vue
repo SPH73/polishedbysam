@@ -23,16 +23,16 @@ onMounted(() => {
 
 <template>
   <div class="w-full min-h-full h-screen flex flex-col bg-secondary">
-    <header class="mt-20 mx-20">
+    <header class="mt-20 mx-10 lg:mx-40 lg:mt-20 lg:mb-40">
       <nav class="">
         <div class="flex items-top justify-between">
           <div>
             <!-- Header Logos -->
-            <img src="/img/PBS.svg" alt="PBS" class="w-48" />
+            <img src="/img/PBS.svg" alt="PBS" class="w-48 lg:w-64" />
             <img
               src="/img/POLISHED-BY-SAM.svg"
               alt="Polished By Sam"
-              class="w-96 mt-5 mb-20"
+              class="w-96 lg:w-2/3 mt-5 mb-20"
             />
           </div>
           <!-- Mobile Menu Button -->
@@ -40,13 +40,13 @@ onMounted(() => {
             <button @click="drawer">
               <font-awesome-icon
                 :icon="['fas', 'bars']"
-                class="text-primary w-12 h-12"
+                class="text-primary w-16 h-16"
               />
             </button>
           </div>
 
           <!-- Navbar -->
-          <div class="hidden lg:block font-poiret">
+          <div class="hidden lg:block font-poiret subpixel-antialiased">
             <ul class="flex space-x-8 text-3xl uppercase text-primary">
               <div class="flex items-center">
                 <NuxtLink to="/" class="pb-2 hover:font-bold"> Home </NuxtLink>
@@ -109,7 +109,7 @@ onMounted(() => {
               <div><img src="/img/PBS.svg" alt="PBS" class="w-48" /></div>
             </span>
             <ul
-              class="divide-y divide-primary font-poiret text-primary uppercase text-2xl"
+              class="divide-y divide-primary font-poiret subpixel-antialiased text-primary uppercase text-5xl mt-20"
             >
               <div class="flex items-center">
                 <NuxtLink
@@ -142,21 +142,23 @@ onMounted(() => {
                 >
               </div>
             </ul>
-            <div class="follow mt-4">
-              <p class="font-poiret uppercase text-primary text-2xl">
-                follow us:
+            <div class="follow mt-12">
+              <p
+                class="font-poiret subpixel-antialiased uppercase text-primary text-5xl"
+              >
+                follow us
               </p>
               <div class="social flex space-x-5 mt-4">
                 <a href="#">
                   <font-awesome-icon
                     :icon="['fab', 'facebook']"
-                    class="text-primary h-12 w12"
+                    class="text-primary h-16 w-16"
                   />
                 </a>
                 <a href="#">
                   <font-awesome-icon
                     :icon="['fab', 'instagram']"
-                    class="text-primary h-12 w12"
+                    class="text-primary h-16 w-16"
                   />
                 </a>
               </div>

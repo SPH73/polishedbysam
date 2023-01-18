@@ -49,7 +49,7 @@
 /* components */
 /* body */
 body {
-  @apply bg-primary;
+  @apply bg-secondary;
 }
 /* main */
 main {
