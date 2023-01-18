@@ -16,7 +16,11 @@ module.exports = {
     fontFamily: {
       poiret: ["PoiretOne-Regular", "sans-serif"],
       questrial: ["Questrial-Regular", "sans-serif"],
-      raleway: ["raleway", "sans-serif"],
+      "raleway-regular": ["Raleway-Regular", "sans-serif"],
+      "raleway-bold": ["Raleway-Bold", "sans-serif"],
+      "raleway-medium": ["Raleway-Medium", "sans-serif"],
+      "raleway-semibold": ["Raleway-SemiBold", "sans-serif"],
+      "raleway-light": ["Raleway-Light", "sans-serif"],
     },
     screens: {
       xs: "320px", //min-width
@@ -47,5 +51,9 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
+  purge: {
+    enabled: true,
+    content: ["./**/*.html"],
+  },
 };

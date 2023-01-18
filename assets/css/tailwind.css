@@ -11,10 +11,25 @@
   font-family: "Questrial-Regular";
   src: url("/fonts/Questrial-Regular.woff");
 }
-,
 @font-face {
-  font-family: "Raleway";
-  src: url("/fonts/Raleway-VariableFont_wght.woff");
+  font-family: "Raleway-Regular";
+  src: url("/fonts/Raleway-Regular.woff");
+}
+@font-face {
+  font-family: "Raleway-Bold";
+  src: url("/fonts/Raleway-Bold.woff");
+}
+@font-face {
+  font-family: "Raleway-Medium";
+  src: url("/fonts/Raleway-Medium.woff");
+}
+@font-face {
+  font-family: "Raleway-SemiBold";
+  src: url("/fonts/Raleway-SemiBold.woff");
+}
+@font-face {
+  font-family: "Raleway-Light";
+  src: url("/fonts/Raleway-Light.woff");
 }
 
 /* add layer styles */
