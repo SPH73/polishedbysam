@@ -30,7 +30,7 @@ onMounted(() => {
             <!-- Header Logos -->
             <img src="/img/PBS.svg" alt="PBS" class="w-48" />
             <img
-              src="/img/POLISHED BY SAM.svg"
+              src="/img/POLISHED-BY-SAM.svg"
               alt="Polished By Sam"
               class="w-96 mt-5 mb-20"
             />
