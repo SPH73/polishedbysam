@@ -22,7 +22,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="w-full min-h-full h-screen flex flex-col bg-secondary">
+  <div class="w-full min-h-full h-screen flex flex-col">
     <header class="mt-20 mx-10 lg:mx-40 lg:mt-20 lg:mb-40">
       <nav class="">
         <div class="flex items-top justify-between">
@@ -173,13 +173,26 @@ onMounted(() => {
     <main class="mb-auto flex flex-col">
       <slot />
     </main>
-    <footer class="hidden bg-primary text-secondary">
-      <div class="container mx-20">
-        <div class="">
-          <h3>WhatsApp:</h3>
-        </div>
-        <div class="">
-          <h3>Book:</h3>
+    <footer class="hidden lg:block bg-primary text-secondary p-8">
+      <div class="container mx-20 flex flex-col">
+        <div class="flex flex-row justify-evenly text-2xl">
+          <div class="">
+            <NuxtLink to="https://api.whatsapp.com/send?phone=447379385222"
+              >WhatsApp me</NuxtLink
+            >
+          </div>
+          <div class="">
+            <NuxtLink
+              to="https://www.facebook.com/profile.php?id=100089587508498"
+              >Follow me on FaceBook</NuxtLink
+            >
+          </div>
+          <div class="">
+            <NuxtLink
+              to="https://www.fresha.com/a/polished-by-sam-warfield-uk-cgbs5hfo/booking?menu=true"
+              >Book an appointment with me</NuxtLink
+            >
+          </div>
         </div>
       </div>
     </footer>
