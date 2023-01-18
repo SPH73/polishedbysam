@@ -37,8 +37,8 @@
 /* color codes */
 @layer base {
   :root {
-    --color-primary: 96 96 96;
-    --color-secondary: 255 214 214;
+    --color-primary: 96 96 96; /* grey */
+    --color-secondary: 255 214 214; /* pink */
 
     font-size: 10px;
   }

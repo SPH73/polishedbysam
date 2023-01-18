@@ -46,14 +46,10 @@ module.exports = {
       colors: {
         transparent: "transparent",
         current: "currentColor",
-        primary: "rgb(var(--color-primary) / 1)",
-        secondary: "rgb(var(--color-secondary) / 1)",
+        primary: "rgb(var(--color-primary) / 1)", //grey
+        secondary: "rgb(var(--color-secondary) / 1)", //pink
       },
     },
   },
   plugins: [require("@tailwindcss/typography")],
-  purge: {
-    enabled: true,
-    content: ["./**/*.html"],
-  },
 };
