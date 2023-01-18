@@ -18,17 +18,32 @@ module.exports = {
       questrial: ["Questrial-Regular", "sans-serif"],
       raleway: ["raleway", "sans-serif"],
     },
-    screens: {},
+    screens: {
+      xs: "320px", //min-width
+      sm: "480px",
+      md: "768px",
+      lg: "976px",
+      xl: "1440px",
+      "2xl": "1600px",
+      "3xl": "1920px",
+    },
     container: {
       center: true,
-      padding: {},
+      padding: {
+        DEFAULT: "1rem",
+        sm: "2rem",
+        lg: "4rem",
+        xl: "5rem",
+        "2xl": "6rem",
+        "3xl": "8rem",
+      },
     },
     extend: {
       colors: {
         transparent: "transparent",
         current: "currentColor",
-        "logo-bg": "rgb(var(--color-logo-bg-pink) /1)",
-        "logo-text": "rgb(var(--color-logo-text-grey) /1)",
+        primary: "rgb(var(--color-primary) / 1)",
+        secondary: "rgb(var(--color-secondary) / 1)",
       },
     },
   },
