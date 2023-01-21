@@ -6,15 +6,15 @@ definePageMeta({
 
 <template>
   <section>
-    <h1 class="text-primary text-5xl lg:text-7xl mb-12 md:mb-24 lg:mb-28">
+    <h1 class="text-primary text-5xl lg:text-7xl 2xl:text-9xl mb-12 md:mb-24">
       Website is <br />
       <span class="uppercase">UNDER CONSTRUCTION</span>
     </h1>
-    <div
-      class="grid grid-cols-1 md:mb-16 lg:mb-24 xl:grid-cols-2 xl:gap-20 xl:mb-32"
-    >
+    <div class="grid grid-cols-1 md:mb-16 lg:mb-24 xl:grid-cols-2 xl:gap-16">
       <div id="text-col">
-        <p class="tracking-wide text-2xl md:text-3xl md:mb-24">
+        <p
+          class="tracking-wide text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl md:mb-24"
+        >
           My mobile nail service is still available; please contact me via
           FaceBook:
           <NuxtLink
@@ -62,7 +62,7 @@ definePageMeta({
     </div>
   </section>
   <section class="max-w-6xl">
-    <p class="tracking-wide text-2xl py-3 md:py-8 lg:py-12">
+    <p class="tracking-wide text-2xl lg:text-3xl 2xl:text-4xl py-3 lg:py-8">
       If you would like to hear about upcoming offers, services and new
       products, please consider subscribing to my mailing list. No spam ever,
       just info!

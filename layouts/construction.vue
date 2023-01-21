@@ -23,7 +23,7 @@ onMounted(() => {
 
 <template>
   <div class="w-full min-h-full h-screen flex flex-col">
-    <header class="mt-20 mx-10 lg:mx-40 mb-20">
+    <header class="mt-20 mx-10 lg:mx-40 mb-12">
       <nav class="">
         <div class="flex items-top justify-between">
           <div>
