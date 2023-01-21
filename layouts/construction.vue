@@ -170,29 +170,26 @@ onMounted(() => {
         </div>
       </nav>
     </header>
-    <main class="mb-auto flex flex-col">
+    <main class="mx-10 lg:mx-40 flex flex-col">
       <slot />
     </main>
-    <footer class="hidden lg:block bg-primary text-secondary p-8">
-      <div class="container mx-20 flex flex-col">
-        <div class="flex flex-row justify-evenly text-2xl">
-          <div class="">
-            <NuxtLink to="https://api.whatsapp.com/send?phone=447379385222"
-              >WhatsApp me</NuxtLink
-            >
-          </div>
-          <div class="">
-            <NuxtLink
-              to="https://www.facebook.com/profile.php?id=100089587508498"
-              >Follow me on FaceBook</NuxtLink
-            >
-          </div>
-          <div class="">
-            <NuxtLink
-              to="https://www.fresha.com/a/polished-by-sam-warfield-uk-cgbs5hfo/booking?menu=true"
-              >Book an appointment with me</NuxtLink
-            >
-          </div>
+    <footer class="bg-primary text-secondary p-4 md:p-8">
+      <div class="flex flex-row justify-around text-xl lg:text-2xl">
+        <div class="">
+          <NuxtLink to="https://api.whatsapp.com/send?phone=447379385222"
+            >WhatsApp me</NuxtLink
+          >
+        </div>
+        <div class="">
+          <NuxtLink to="https://www.facebook.com/profile.php?id=100089587508498"
+            >Follow me</NuxtLink
+          >
+        </div>
+        <div class="">
+          <NuxtLink
+            to="https://www.fresha.com/a/polished-by-sam-warfield-uk-cgbs5hfo/booking?menu=true"
+            >Book me</NuxtLink
+          >
         </div>
       </div>
     </footer>

@@ -23,13 +23,12 @@ module.exports = {
       "raleway-light": ["Raleway-Light", "sans-serif"],
     },
     screens: {
-      xs: "320px", //min-width
-      sm: "480px",
-      md: "768px",
-      lg: "976px",
-      xl: "1440px",
-      "2xl": "1600px",
-      "3xl": "1920px",
+      sm: "390px", // mobile 1 UK
+      md: "768px", // tablet 1 UK
+      lg: "1280px", // tablet
+      xl: "1366px", //desktop 3
+      "2xl": "1536px", //desktop 2
+      "3xl": "1920px", //Desktop 1
     },
     container: {
       center: true,
