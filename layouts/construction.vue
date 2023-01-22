@@ -48,14 +48,14 @@ onMounted(() => {
           <!-- Navbar -->
           <div class="hidden lg:block font-poiret subpixel-antialiased">
             <ul class="flex space-x-8 text-3xl uppercase text-primary">
-              <div class="flex items-center">
+              <!-- <div class="flex items-center">
                 <NuxtLink to="/" class="pb-2 hover:font-bold"> Home </NuxtLink>
-              </div>
-              <div class="flex items-center">
+              </div> -->
+              <!-- <div class="flex items-center">
                 <NuxtLink to="/about" class="hover:font-bold pb-2">
                   About
                 </NuxtLink>
-              </div>
+              </div> -->
               <div class="flex items-center">
                 <NuxtLink
                   to="https://www.fresha.com/book-now/polished-by-sam-ggw4i4ty/all-offer?id=854408&pId=803345"
@@ -111,7 +111,7 @@ onMounted(() => {
             <ul
               class="divide-y divide-primary font-poiret subpixel-antialiased text-primary uppercase text-5xl mt-20"
             >
-              <div class="flex items-center">
+              <!-- <div class="flex items-center">
                 <NuxtLink
                   to="/"
                   @click="isOpen = false"
@@ -119,9 +119,9 @@ onMounted(() => {
                 >
                   Home</NuxtLink
                 >
-              </div>
+              </div> -->
 
-              <div class="flex items-center">
+              <!-- <div class="flex items-center">
                 <NuxtLink
                   to="/about"
                   @click="isOpen = false"
@@ -129,7 +129,7 @@ onMounted(() => {
                 >
                   About</NuxtLink
                 >
-              </div>
+              </div> -->
               <div class="flex items-center">
                 <NuxtLink
                   to="https://www.fresha.com/a/polished-by-sam-warfield-uk-cgbs5hfo/booking?menu=true"
