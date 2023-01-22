@@ -9,18 +9,8 @@ export default defineNuxtConfig({
       "@fortawesome/vue-fontawesome",
     ],
   },
-  modules: [
-    "@nuxtjs/tailwindcss",
-    "@tailwindcss/typography",
-    // "nuxt-newsletter",
-  ],
-  // newsletter: {
-  //   mailchimp: {
-  //     apiKey: process.env.MAILCHIMP_API_KEY,
-  //     audienceId: process.env.MAILCHIMP_AUDIENCE_ID,
-  //     serverPrefix: process.env.MAILCHIMP_SERVER_PREFIX,
-  //   },
-  // },
+  modules: ["@nuxtjs/tailwindcss", "@tailwindcss/typography"],
+
   tailwindcss: {
     cssPath: "~/assets/css/tailwind.css",
     configPath: "tailwind.config",
@@ -28,11 +18,11 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     private: {
-      mcApiKey: process.env.MAILCHIMP_API_KEY,
+      mcApiKey: process.env.MC_API_KEY,
     },
     public: {
-      mcAudId: process.env.MAILCHIMP_AUDIENCE_ID,
-      mcServer: process.env.MAILCHIMP_SERVER_PREFIX,
+      mcAudId: process.env.MC_AUDIENCE_ID,
+      mcServer: process.env.MC_SERVER_PREFIX,
     },
   },
 });
