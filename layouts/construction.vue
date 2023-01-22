@@ -3,6 +3,7 @@ useHead({
   titleTemplate: titleChunk => {
     return titleChunk ? `${titleChunk} - PBS` : "Polished By Sam";
   },
+  link: [{ rel: "icon", type: "image/png", href: "favicon.ico" }],
 });
 const isOpen = ref(false);
 function drawer() {
