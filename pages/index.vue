@@ -8,7 +8,7 @@ const formData = ref({});
 const firstName = ref({ val: "", isValid: true });
 const lastName = ref({ val: "", isValid: true });
 const email = ref({ val: "", isValid: true });
-const subscriberId = ref("");
+const success = ref("");
 
 const formIsValid = ref(true);
 
@@ -43,12 +43,17 @@ async function subscribe() {
     email: email.value.val,
     status: "subscribed",
   };
-  console.log("formData", formData.value);
+
   const result = await $fetch("/api/mailchimp", {
     method: "post",
     body: formData.value,
   });
-  console.log("result*****", result);
+  if (result) {
+    success.value = "Thank you for subscribing!";
+    firstName.value.val = "";
+    lastName.value.val = "";
+    email.value.val = "";
+  }
 }
 </script>
 
@@ -146,7 +151,13 @@ async function subscribe() {
         </button>
       </div>
     </form>
-    <p class="text-sm text-primary font-raleway-light tracking-wide">
+    <p
+      v-if="success"
+      class="text-md text-primary font-raleway-light tracking-wide"
+    >
+      {{ success }}
+    </p>
+    <p v-else class="text-sm text-primary font-raleway-light tracking-wide">
       By submitting your info you are giving me permission to store your data
       for the purpose of sending discount codes or news about new products and
       services and upcoming offers to your inbox. Your data will never be sold
