@@ -13,15 +13,6 @@ module.exports = {
     "content/**/*.md",
   ],
   theme: {
-    fontFamily: {
-      poiret: ["PoiretOne-Regular", "sans-serif"],
-      questrial: ["Questrial-Regular", "sans-serif"],
-      "raleway-regular": ["Raleway-Regular", "sans-serif"],
-      "raleway-bold": ["Raleway-Bold", "sans-serif"],
-      "raleway-medium": ["Raleway-Medium", "sans-serif"],
-      "raleway-semibold": ["Raleway-SemiBold", "sans-serif"],
-      "raleway-light": ["Raleway-Light", "sans-serif"],
-    },
     screens: {
       sm: "390px", // mobile 1 UK
       md: "768px", // tablet 1 UK
@@ -47,6 +38,15 @@ module.exports = {
         current: "currentColor",
         primary: "rgb(var(--color-primary) / 1)", //grey
         secondary: "rgb(var(--color-secondary) / 1)", //pink
+      },
+      fontFamily: {
+        poiret: ["PoiretOne-Regular", "sans-serif"],
+        questrial: ["Questrial-Regular", "sans-serif"],
+        "raleway-regular": ["Raleway-Regular", "sans-serif"],
+        "raleway-bold": ["Raleway-Bold", "sans-serif"],
+        "raleway-medium": ["Raleway-Medium", "sans-serif"],
+        "raleway-semibold": ["Raleway-SemiBold", "sans-serif"],
+        "raleway-light": ["Raleway-Light", "sans-serif"],
       },
     },
   },

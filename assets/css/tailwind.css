@@ -5,31 +5,58 @@
 /* fonts */
 @font-face {
   font-family: "PoiretOne-Regular";
-  src: url("/fonts/PoiretOne-Regular.woff");
+  src: url("/fonts/PoiretOne-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
   font-family: "Questrial-Regular";
-  src: url("/fonts/Questrial-Regular.woff");
+  src: url("/fonts/Questrial-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("/fonts/Raleway-Regular.woff");
+  src: url("/fonts/Raleway-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
   font-family: "Raleway-Bold";
-  src: url("/fonts/Raleway-Bold.woff");
+  src: url("/fonts/Raleway-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
   font-family: "Raleway-Medium";
-  src: url("/fonts/Raleway-Medium.woff");
+  src: url("/fonts/Raleway-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
   font-family: "Raleway-SemiBold";
-  src: url("/fonts/Raleway-SemiBold.woff");
+  src: url("/fonts/Raleway-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
   font-family: "Raleway-Light";
-  src: url("/fonts/Raleway-Light.woff");
+  src: url("/fonts/Raleway-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* add layer styles */

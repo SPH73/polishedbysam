@@ -24,7 +24,7 @@ onMounted(() => {
 <template>
   <div class="w-full min-h-full h-screen flex flex-col">
     <header class="mt-20 mx-10 lg:mx-40 mb-12">
-      <nav class="">
+      <nav class="font-questrial subpixel-antialiased">
         <div class="flex items-top justify-between">
           <div>
             <!-- Header Logos -->
@@ -173,7 +173,7 @@ onMounted(() => {
     <main class="mx-10 lg:mx-40 flex flex-col">
       <slot />
     </main>
-    <footer class="bg-primary text-secondary p-4 md:p-8">
+    <footer class="bg-primary text-secondary font-raleway-regular p-4 md:p-8">
       <div class="flex flex-row justify-around text-xl lg:text-2xl">
         <div class="">
           <NuxtLink to="https://api.whatsapp.com/send?phone=447379385222"

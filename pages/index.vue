@@ -6,14 +6,16 @@ definePageMeta({
 
 <template>
   <section>
-    <h1 class="text-primary text-5xl lg:text-7xl 2xl:text-9xl mb-12 md:mb-24">
+    <h1
+      class="text-primary text-5xl lg:text-7xl 2xl:text-9xl mb-12 md:mb-24 font-raleway-semibold"
+    >
       Website is <br />
-      <span class="uppercase">UNDER CONSTRUCTION</span>
+      <span class="uppercase font-raleway-bold">UNDER CONSTRUCTION</span>
     </h1>
     <div class="grid grid-cols-1 md:mb-16 lg:mb-24 xl:grid-cols-2 xl:gap-16">
       <div id="text-col">
         <p
-          class="tracking-wide text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl md:mb-24"
+          class="tracking-wide text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl md:mb-24 font-raleway-medium"
         >
           My mobile nail service is still available; please contact me via
           FaceBook:
@@ -22,7 +24,7 @@ definePageMeta({
             rel="noopener"
             to="https://www.facebook.com/profile.php?id=100089587508498"
           >
-            <span class="font-bold cursor-pointer"
+            <span class="font-poiret subpixel-antialiased cursor-pointer"
               >@polishedbysam
             </span></NuxtLink
           >
@@ -31,7 +33,7 @@ definePageMeta({
             target="_blank"
             rel="noopener"
             to="https://api.whatsapp.com/send?phone=447379385222"
-            ><span class="font-bold cursor-pointer"
+            ><span class="font-poiret subpixel-antialiased cursor-pointer"
               >07379 385222</span
             ></NuxtLink
           >
@@ -62,7 +64,9 @@ definePageMeta({
     </div>
   </section>
   <section class="max-w-6xl">
-    <p class="tracking-wide text-2xl lg:text-3xl 2xl:text-4xl py-3 lg:py-8">
+    <p
+      class="tracking-wide text-md lg:text-3xl 2xl:text-4xl py-3 lg:py-8 font-raleway-regular"
+    >
       If you would like to hear about upcoming offers, services and new
       products, please consider subscribing to my mailing list. No spam ever,
       just info!
@@ -91,7 +95,7 @@ definePageMeta({
         </button>
       </div>
     </form>
-    <p class="text-sm text-primary">
+    <p class="text-sm text-primary font-raleway-light tracking-wide">
       By submitting your info you are giving me permission to store your data
       for the purpose of sending discount codes or news about new products and
       services and upcoming offers to your inbox. Your data will never be sold
