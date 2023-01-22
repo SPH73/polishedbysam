@@ -2,6 +2,54 @@
 definePageMeta({
   layout: "construction",
 });
+
+// form data
+const formData = ref({});
+const firstName = ref({ val: "", isValid: true });
+const lastName = ref({ val: "", isValid: true });
+const email = ref({ val: "", isValid: true });
+const subscriberId = ref("");
+
+const formIsValid = ref(true);
+
+// methods
+const validateForm = () => {
+  formIsValid.value = true;
+
+  // form details
+  if (firstName.value.val === "") {
+    firstName.value.isValid = false;
+    formIsValid.value = false;
+  }
+  if (lastName.value.val === "") {
+    lastName.value.isValid = false;
+    formIsValid.value = false;
+  }
+  if (email.value.val === "" || !email.value.val.includes("@")) {
+    email.value.isValid = false;
+    formIsValid.value = false;
+  }
+};
+
+async function subscribe() {
+  validateForm();
+  if (!formIsValid.value) {
+    return;
+  }
+
+  formData.value = {
+    firstName: firstName.value.val,
+    lastName: lastName.value.val,
+    email: email.value.val,
+    status: "subscribed",
+  };
+  console.log("formData", formData.value);
+  const result = await $fetch("/api/mailchimp", {
+    method: "post",
+    body: formData.value,
+  });
+  console.log("result*****", result);
+}
 </script>
 
 <template>
@@ -71,20 +119,23 @@ definePageMeta({
       products, please consider subscribing to my mailing list. No spam ever,
       just info!
     </p>
-    <form @submit.prevent>
+    <form @submit.prevent="subscribe">
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 w-full mb-4">
         <input
           type="text"
+          v-model.trim.lazy="firstName.val"
           placeholder="First"
           class="p-3 rounded-full text-xl"
         />
         <input
           type="text"
+          v-model.trim.lazy="lastName.val"
           placeholder="Last"
           class="p-3 rounded-full text-xl"
         />
         <input
           type="email"
+          v-model.trim.lazy="email.val"
           placeholder="Email"
           class="p-3 rounded-full text-xl"
         />
