@@ -1,6 +1,6 @@
-# Polished By Sam Website Created with Nuxt 3 Starter
+# Polished By Sam Website
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b92d3cc8-1014-4a08-bf4a-b63acf03cf1f/deploy-status)](https://app.netlify.com/sites/polishedbysam/deploys)
 
 ## Setup
 
