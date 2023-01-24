@@ -60,7 +60,7 @@ async function subscribe() {
 <template>
   <section>
     <h1
-      class="text-primary text-5xl lg:text-7xl 2xl:text-9xl mb-12 md:mb-24 font-raleway-semibold"
+      class="text-5xl lg:text-7xl 2xl:text-9xl mb-12 md:mb-24 font-raleway-semibold"
     >
       Website is <br />
       <span class="uppercase font-raleway-bold">UNDER CONSTRUCTION</span>
@@ -157,7 +157,7 @@ async function subscribe() {
     >
       {{ success }}
     </p>
-    <p v-else class="text-sm text-primary font-raleway-light tracking-wide">
+    <p v-else class="text-sm font-raleway-light tracking-wide">
       By submitting your info you are giving me permission to store your data
       for the purpose of sending discount codes or news about new products and
       services and upcoming offers to your inbox. Your data will never be sold

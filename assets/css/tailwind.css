@@ -76,7 +76,7 @@
 /* components */
 /* body */
 body {
-  @apply bg-secondary;
+  @apply bg-secondary text-primary;
 }
 /* main */
 main {
