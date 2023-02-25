@@ -40,16 +40,18 @@ async function subscribe() {
   formData.value = {
     firstName: firstName.value.val,
     lastName: lastName.value.val,
-    email: email.value.val,
-    status: "pending",
+    email: email.value.val.toLowerCase(),
+    tags: ["updates", "offers", "news"],
   };
 
   const result = await $fetch("/api/mailchimp", {
-    method: "post",
+    method: "put",
     body: formData.value,
   });
+
   if (result) {
-    success.value = "Thank you for subscribing - please confirm your email!";
+    success.value =
+      "Thank you for subscribing to offers, updates and news emails from PBS!";
     firstName.value.val = "";
     lastName.value.val = "";
     email.value.val = "";
