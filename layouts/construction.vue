@@ -159,7 +159,7 @@ onMounted(() => {
                     class="text-primary h-16 w-16"
                   />
                 </NuxtLink> -->
-                <NuxtLink to="#">
+                <NuxtLink to="https://api.whatsapp.com/send?phone=447379385222">
                   <font-awesome-icon
                     :icon="['fab', 'whatsapp']"
                     class="text-primary h-16 w-16"

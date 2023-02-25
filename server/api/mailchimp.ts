@@ -22,7 +22,7 @@ export default defineEventHandler(async event => {
   try {
     const response = await mailchimp.lists.addListMember(mcAudId, {
       email_address: email,
-      status: "subscribed",
+      status: "pending",
       merge_fields: {
         FNAME: firstName,
         LNAME: lastName,
@@ -46,23 +46,3 @@ export default defineEventHandler(async event => {
 
   return result;
 });
-
-// import mailchimp from "@mailchimp/mailchimp_marketing";
-
-// export default defineEventHandler(async fields => {
-// const { mcApiKey } = useRuntimeConfig().private;
-// const { mcAudId } = useRuntimeConfig().public;
-// const { mcServer } = useRuntimeConfig().public;
-
-//   mailchimp.setConfig({
-//     apiKey: mcApiKey,
-//     server: mcServer,
-//   });
-//   const subscribingUser = await readBody(fields);
-
-//   const response = await mailchimp.lists.addListMember(mcAudId, {
-//     subscribingUser,
-//   });
-//   console.log(response);
-//   return response;
-// });

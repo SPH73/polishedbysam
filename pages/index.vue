@@ -41,7 +41,7 @@ async function subscribe() {
     firstName: firstName.value.val,
     lastName: lastName.value.val,
     email: email.value.val,
-    status: "subscribed",
+    status: "pending",
   };
 
   const result = await $fetch("/api/mailchimp", {
@@ -49,7 +49,7 @@ async function subscribe() {
     body: formData.value,
   });
   if (result) {
-    success.value = "Thank you for subscribing!";
+    success.value = "Thank you for subscribing - please confirm your email!";
     firstName.value.val = "";
     lastName.value.val = "";
     email.value.val = "";
@@ -161,8 +161,8 @@ async function subscribe() {
       By submitting your info you are giving me permission to store your data
       for the purpose of sending discount codes or news about new products and
       services and upcoming offers to your inbox. Your data will never be sold
-      or given to a third party. You can request to unsubscribe by emailing me
-      with the subject: Unsubscribe.
+      or given to a third party. You can unsubscribe by clicking the unsuscribe
+      link in any of my emails.
     </p>
   </section>
 </template>
